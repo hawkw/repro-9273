@@ -1,0 +1,21 @@
+[package]
+name = "repro-9273"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.hyper]
+version = "0.14.20"
+features = ["http1", "http2", "client", "server", "runtime", "tcp"]
+
+[dependencies.tracing]
+version = "0.1.36"
+
+[dependencies.tracing-subscriber]
+version = "0.3.15"
+features = ["fmt", "env-filter", "ansi"]
+
+[dependencies.tokio]
+version = "1.20.1"
+features = ["full"]
